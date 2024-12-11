@@ -3,6 +3,8 @@ Overview of the projects completed
 # [Project 1: Exploratory Data Analysis]
 - Project Description
 - Project Title
+- ![8_D_Databrew](https://github.com/user-attachments/assets/6a1ebbc8-cb92-4d1c-8a49-f35893ac50f4)
+
 - Objective
 - Dataset
 - Methodology
