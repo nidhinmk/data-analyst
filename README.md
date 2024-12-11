@@ -117,20 +117,67 @@ Below is the overview of the AWS projects completed
     ![13_D_Storage_User](https://github.com/user-attachments/assets/2e926833-805b-4543-8f4c-9043d5c19fe3)
 
   
-# Project 2: Exploratory Data Analysis
+# Project 2: Exploratory Data Analysis for The City of Vancouver
+
 - Project Description
+
+  City of Vancouver has many ongoing undertakings concerning its organizational growth as it tries to improve matters of operation and decision making by use of big data. In this context, the construction of a Data Analytic Platform (DAP) is the appropriate way to turn the data into the right and useful information and to provide meaningful insights for the city.
+
 - Project Title
+
+  Key steps include data ingestion, where transformed data is collected and securely stored in AWS services S3, data profiling and cleaning, during which data credibility and relevancy are checked; and data pipeline, which creates an efficient way of processing data. The platform has a capability of performing the exploratory data analysis for employee remuneration who are earning more than $75,000 for the City of Vancouver
+
 - Objective
+
+**Data Question:** What is the remuneration distribution for employees in managerial role in Finance and Planning departments for year 2023?
+
 - Dataset
-- Methodology
-  - Data Collection and Preperation
-  - Descriptive Statistics
-  - Data Visualization
-  - Survival Analysis
-  - Insights and Findings
-  - Conclusion
-- Tools and Technologies
-- Deliverables
+
+  As part of data ingestion process, the employees data will be collected from Finance and Planning departments for the year 2023. The average and count of the remuneration will be 
+calculated for both the departments.
+
+  _Remuneration data for departments_
+
+  ![2_Remuneration_2](https://github.com/user-attachments/assets/93ef7ad6-1b68-4717-a27c-c0ce2829c8fb)
+
+  - Data Profiling
+    
+  As profiling is done previously on this dataset, we can reuse the same profiling while doing exploratory analysis.
+
+  _Data Profiling_
+
+  ![3_DataProfile_3](https://github.com/user-attachments/assets/f4d571b7-a468-48aa-ab03-4d9e7e56f6c2)
+
+  - Data Cleaning
+
+  Recipes has been modified for the existing dataset to make changes to the data. New Regular Expressions have been included to incorporate new data. The Regex will be used to change the 
+  extra text associated with the title. Doing this will help in grouping the title together, when doing further data processing.
+
+  _Data Cleaning_
+
+  ![4_Data_Cleaning_4](https://github.com/user-attachments/assets/8ba1202f-e21d-4696-a6d3-f0ac14efef8d)
+
+  - Data Pipeline Design
+ 
+    The below figure shows the extraction, transformation and loading of gov-rem-etl-nmk job to process the data related to employee remuneration.
+
+    ![5_Visual_ETL_5](https://github.com/user-attachments/assets/bf4cb6e5-5ffc-4bbd-8b3e-cee18b19fcb9)
+
+    In the extraction phase the employee data is loaded from the S3 bucket. In the transformation phase, firstly, I removed the name column, as this is not required for the exploratory 
+    process. This is done through Change Schema mechanism. Secondly, the data is filtered to incorporate only Mangers from Finance department. In the next step, the average of 
+    remuneration is calculated and the column is renamed further for better readability. Meanwhile, in the other thread, the managers from Planning department is filtered and the average 
+    remuneration of these employees are calculated in the next step. Also, the fields are renamed for better readability and to incorporate the join clause changes. Furthermore, both 
+    these data are joined together to compare which mangers from specific department will have more remuneration. Doing this exploratory analysis will help us in determining, which 
+    mangers are likely to be paid more based on the departments. Finally, the processed data is stored in S3 buckets System and User, as shown below.
+
+    _User folder_
+
+    ![6_UserStorage](https://github.com/user-attachments/assets/e4e24c76-02d6-4add-82cb-0a57096cce2b)
+
+    _System Folder_
+
+    ![7_SystemStorage](https://github.com/user-attachments/assets/8aba2b50-6b65-4898-8c2c-ec8547e35320)
+
 
 
 # Project 3: Diagonostic Analysis
