@@ -3,15 +3,18 @@ Below is the overview of the AWS projects completed
 
 # Project 1: Descriptive Analysis of Employee remuneration for City of Vancouver
 - Project Description
+
   City of Vancouver has many ongoing undertakings concerning its organizational growth as it tries to improve matters of operation and decision making by use of big data. In this context, the construction of a Data Analytic Platform (DAP) is the appropriate way to turn the data into the right and useful information and to provide meaningful insights for the city.
   
 - Project Title
+
   Key steps include data ingestion, where raw data is collected and securely stored in AWS services S3, data profiling and cleaning, during which data credibility and relevancy are checked; and data pipeline, which creates an efficient way of processing data. The platform has a capability of performing the descriptive analysis for employee remuneration who are earning more than $75,000 for the City of Vancouver
 
 - Objective
   
-  **Data Question: ** What is the rate of remuneration (earning over $75000) per employees in management role for 2023 within Finance and Planning departments?
+  **Data Question:** What is the rate of remuneration (earning over $75000) per employees in management role for 2023 within Finance and Planning departments?
 - Dataset
+
   The below figure shows how the data of employees is ingested from Finance and Planning departments for the year 2023.
   
   ![1_D_Vancouver_Remuneration](https://github.com/user-attachments/assets/045dbdd7-9e3d-4c61-90c7-adfc2bc446c4)
