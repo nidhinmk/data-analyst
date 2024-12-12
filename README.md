@@ -1,14 +1,7 @@
 # data-analyst
 Below is the overview of the AWS projects completed
 
-
- 
 # Project 1: Descriptive Analysis of Employee remuneration for City of Vancouver 
-  
-
-<details> 
-
-<summary> Expand </summary>
   
 - Project Description
 
@@ -124,7 +117,6 @@ Below is the overview of the AWS projects completed
 
     ![13_D_Storage_User](https://github.com/user-attachments/assets/2e926833-805b-4543-8f4c-9043d5c19fe3)
 
-</details>
 
 # Project 2: Exploratory Data Analysis for The City of Vancouver
 
