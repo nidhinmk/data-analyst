@@ -179,12 +179,17 @@ calculated for both the departments.
     ![7_SystemStorage](https://github.com/user-attachments/assets/8aba2b50-6b65-4898-8c2c-ec8547e35320)
 
 
+# Project 3: Data Analytic Platform Implementation for The City of Vancouver
 
-# Project 3: Data Analytic Platform Implementation
+- Project Description
 
+  In this context, the implementation of a Data Analytic Platform (DAP) is the appropriate way to enrich the data, protect, governance and do observance on the data for the city of 
+  Vancouver. 
+  
 - Data Enriching
-  The process of enhancing existing information by adding missing or incomplete data is termed Data Enriching. Usually, this process is achieved by making use of external sources (Science 
-  Direct, 2013). As can be seen from the below figure, the database used to store the data is cov-gov-datacatalog-nmk. This is a structured data model, and data is stored in rows and 
+
+  The process of enhancing existing information by adding missing or incomplete data is termed Data Enriching. Usually, this process is achieved by making use of external sources. As can 
+  be seen from the below figure, the database used to store the data is _cov-gov-datacatalog-nmk_. This is a structured data model, and data is stored in rows and 
   columns. The dataset used is Employee remuneration and expenses, who earns over $75,000 and is generated and owned by the City of Vancouver. Using AWS’s Athena, we have created an SQL 
   query to calculate the maximum remuneration of employees who are from the Finance and Planning department. It can be clearly seen that the maximum remuneration under this category is 
   $3,216,76.16. This data will be further used for reporting purposes and the insights learned from this can be used to make informed decisions in a swift manner.
@@ -196,7 +201,7 @@ calculated for both the departments.
 
 - Data Protection
 
-  As per the recommendation from AWS for data protection, users are responsible for the management tasks and security configuration for the services one uses. The AWS account credentials    has to be protected and individual users has to be set up with AWS IAM Identity center or AWS Identity and Access Management (IAM) (AWS Support, n.d.). There are three main problems   
+  As per the recommendation from AWS for data protection, users are responsible for the management tasks and security configuration for the services one uses. The AWS account credentials    has to be protected and individual users has to be set up with AWS IAM Identity center or AWS Identity and Access Management (IAM). There are three main problems   
   that should be considered as part of Data protection, Firstly, the users shouldn’t be allowed to read what they are not supposed to read. This is called Confidentiality problem. 
   Secondly, they are not allowed to change what they are not entitled to, which is termed as Integrity problem. Thirdly, they shouldn’t block the access of good or valid users, which is   
   as Availability problem.
@@ -208,9 +213,10 @@ calculated for both the departments.
   ![2_Backups](https://github.com/user-attachments/assets/b4404e2a-5ebd-4a95-8da7-92a8faee25ae)
 
     - Confidentiality Protection
+
       In Confidentiality protection, a key is generated using the Key Management Service (KMS) and the same is used to encrypt and decrypt while reading, writing and transferring the data.
 
-      Key Management Service
+      _Key Management Service_
 
       ![3_KMS](https://github.com/user-attachments/assets/cc7da50a-46c2-4c9d-9aa1-cda086b97a26)
 
@@ -239,7 +245,7 @@ calculated for both the departments.
       ![6_replrules](https://github.com/user-attachments/assets/73ea73e6-a404-4ce0-b588-6d0541990304)
 
       
-- Data Protection
+- Data Governance
 
   As part of data governance, one has to ensure that the data is of high quality, that privacy is maintained in data and that personal identification information is protected. Also, the     data should comply with the international rules and regulations. Finally, the data must be protected by maintaining high confidentiality, integrity and high availability. 
   The below figure shows the Visual ETL (Extract, Transform, Load) for the government employees’ data. Based on the uniqueness of the data, it will be stored in either Passed or Failed 
@@ -275,15 +281,4 @@ calculated for both the departments.
   _Dashboard for the City of Vancouver – Logs and Alarm_
 
   ![11_LogsnAlarm](https://github.com/user-attachments/assets/e0e5cf91-416f-4acc-a104-c0c2f598a35f)
-
-  
-
-
-
-
-
-
-- Data Governance
-- Data Observability
-
 
