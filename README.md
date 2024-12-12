@@ -1,11 +1,19 @@
 # data-analyst
 Below is the overview of the AWS projects completed
 
-# Project 1: Descriptive Analysis of Employee remuneration for City of Vancouver
+
+ 
+# Project 1: Descriptive Analysis of Employee remuneration for City of Vancouver 
+  
+
+<details> 
+
+<summary> Expand </summary>
+  
 - Project Description
 
   City of Vancouver has many ongoing undertakings concerning its organizational growth as it tries to improve matters of operation and decision making by use of big data. In this context, the construction of a Data Analytic Platform (DAP) is the appropriate way to turn the data into the right and useful information and to provide meaningful insights for the city.
-  
+
 - Project Title
 
   Key steps include data ingestion, where raw data is collected and securely stored in AWS services S3, data profiling and cleaning, during which data credibility and relevancy are checked; and data pipeline, which creates an efficient way of processing data. The platform has a capability of performing the descriptive analysis for employee remuneration who are earning more than $75,000 for the City of Vancouver
@@ -47,8 +55,8 @@ Below is the overview of the AWS projects completed
 
   - Data Profiling
  
-    The below figure depicts the design for profiling and cleaning. Firstly, the data will be fetched from gov-raw-nmk bucket and with the help of AWS Glue Databrew, it is run through gov- 
-    rem-emp-prj-nmk profiling and gov-rem-emp-job-nmk cleaning processes. Lastly, the data is stored into gov-trf-nmk S3 bucket.
+    The below figure depicts the design for profiling and cleaning. Firstly, the data will be fetched from gov-raw-nmk bucket and with the help of AWS Glue Databrew, it is run through 
+    gov-rem-emp-prj-nmk profiling and gov-rem-emp-job-nmk cleaning processes. Lastly, the data is stored into gov-trf-nmk S3 bucket.
 
     _Design diagram for Profiling and Cleaning_
 
@@ -116,7 +124,8 @@ Below is the overview of the AWS projects completed
 
     ![13_D_Storage_User](https://github.com/user-attachments/assets/2e926833-805b-4543-8f4c-9043d5c19fe3)
 
-  
+</details>
+
 # Project 2: Exploratory Data Analysis for The City of Vancouver
 
 - Project Description
