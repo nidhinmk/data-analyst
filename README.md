@@ -180,8 +180,110 @@ calculated for both the departments.
 
 
 
-# Project 3: Diagonostic Analysis
-# Project 4: Data Wrangling
-# Project 5: Data Quality Control
+# Project 3: Data Analytic Platform Implementation
+
+- Data Enriching
+  The process of enhancing existing information by adding missing or incomplete data is termed Data Enriching. Usually, this process is achieved by making use of external sources (Science 
+  Direct, 2013). As can be seen from the below figure, the database used to store the data is cov-gov-datacatalog-nmk. This is a structured data model, and data is stored in rows and 
+  columns. The dataset used is Employee remuneration and expenses, who earns over $75,000 and is generated and owned by the City of Vancouver. Using AWS’s Athena, we have created an SQL 
+  query to calculate the maximum remuneration of employees who are from the Finance and Planning department. It can be clearly seen that the maximum remuneration under this category is 
+  $3,216,76.16. This data will be further used for reporting purposes and the insights learned from this can be used to make informed decisions in a swift manner.
+
+  _Maximum remuneration of employees_
+
+  ![1_Remunation](https://github.com/user-attachments/assets/bb08dd6e-977f-4c58-985a-c1c5357359f7)
+
+
+- Data Protection
+
+  As per the recommendation from AWS for data protection, users are responsible for the management tasks and security configuration for the services one uses. The AWS account credentials    has to be protected and individual users has to be set up with AWS IAM Identity center or AWS Identity and Access Management (IAM) (AWS Support, n.d.). There are three main problems   
+  that should be considered as part of Data protection, Firstly, the users shouldn’t be allowed to read what they are not supposed to read. This is called Confidentiality problem. 
+  Secondly, they are not allowed to change what they are not entitled to, which is termed as Integrity problem. Thirdly, they shouldn’t block the access of good or valid users, which is   
+  as Availability problem.
+  
+  The below figure shows that the backup folders have been created for all the raw, transform and curated buckets.
+
+  _Backups for S3s_
+
+  ![2_Backups](https://github.com/user-attachments/assets/b4404e2a-5ebd-4a95-8da7-92a8faee25ae)
+
+    - Confidentiality Protection
+      In Confidentiality protection, a key is generated using the Key Management Service (KMS) and the same is used to encrypt and decrypt while reading, writing and transferring the data.
+
+      Key Management Service
+
+      ![3_KMS](https://github.com/user-attachments/assets/cc7da50a-46c2-4c9d-9aa1-cda086b97a26)
+
+      The figure below shows the encryption mechanism used for the gov-raw-nmk bucket.
+
+      _Encryption for S3 raw bucket._
+
+      ![4_Encryption4S3](https://github.com/user-attachments/assets/70a63204-ab22-4cc1-9bcc-2566dfec33e4)
+
+    - Integrity Protection
+
+      As part of the integrity protection of the data, the versioning mechanism is used for the S3 bucket gov-raw-nmk to make sure data can be recovered easily during application     
+      failures.
+
+      _Versioning for S3 raw bucket._
+
+      ![5_versioning](https://github.com/user-attachments/assets/c4a50a0e-1c1c-4b47-8178-36a334e3f99c)
+
+
+    - Availability Protection
+
+      As part of availability protection, the figure below depicts that the data for the gov-raw-nmk bucket is replicated in the US East North Virginia region.
+
+      _Replication Rules for S3 raw bucket_
+
+      ![6_replrules](https://github.com/user-attachments/assets/73ea73e6-a404-4ce0-b588-6d0541990304)
+
+      
+- Data Protection
+
+  As part of data governance, one has to ensure that the data is of high quality, that privacy is maintained in data and that personal identification information is protected. Also, the     data should comply with the international rules and regulations. Finally, the data must be protected by maintaining high confidentiality, integrity and high availability. 
+  The below figure shows the Visual ETL (Extract, Transform, Load) for the government employees’ data. Based on the uniqueness of the data, it will be stored in either Passed or Failed 
+  folder in S3 bucket. This segregation ensures that the data is of high quality and only good data is processed further.
+
+  _Sensitive data protection_
+
+  ![7_sensitive](https://github.com/user-attachments/assets/e21727c4-f31a-45bc-820f-49b27ba2b8fc)
+
+  The extracted and transformed data is loaded onto the Passed folder in S3.
+
+  _Data stored in S3 bucket - Passed_
+
+  ![8_DataStored](https://github.com/user-attachments/assets/99d7da02-a28f-42e5-b63c-983e9253613f)
+
+  The extracted and transformed data is loaded onto the Failed folder in S3.
+
+  _Data stored in S3 bucket - Failed_
+
+  ![9_FailedBucekt](https://github.com/user-attachments/assets/8bc1017f-0804-435e-85f0-3555ec3f70c1)
+
+- Data Observability
+
+  As part of data observability, the data has to be monitored, and appropriate actions have to be taken if there are any flaws found during the process. The below figure depicts the 
+  bucket size in bytes of the S3 bucket used to store the employee data of the City of Vancouver.
+
+  _Dashboard for the City of Vancouver_
+
+  ![10_Dashboard](https://github.com/user-attachments/assets/27c91259-ffe0-4784-92fc-b03d71ba73ea)
+
+  The below figure shows the alarm and real-time logs for the government employees data for City of Vancouver.
+
+  _Dashboard for the City of Vancouver – Logs and Alarm_
+
+  ![11_LogsnAlarm](https://github.com/user-attachments/assets/e0e5cf91-416f-4acc-a104-c0c2f598a35f)
+
+  
+
+
+
+
+
+
+- Data Governance
+- Data Observability
 
 
