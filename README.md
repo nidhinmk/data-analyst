@@ -1,4 +1,4 @@
-# data-analyst-nidhinmk
+# data-analyst
 
 Below is the overview of the AWS projects completed
 
@@ -124,7 +124,7 @@ Below is the overview of the AWS projects completed
 
     ![13_D_Storage_User](https://github.com/user-attachments/assets/2e926833-805b-4543-8f4c-9043d5c19fe3)
 
-[Back to Top](#data-analyst-nidhinmk)
+[Back to Top](#data-analyst)
 
 # Project 2: Exploratory Data Analysis for The City of Vancouver
 
@@ -187,7 +187,7 @@ calculated for both the departments.
 
     ![7_SystemStorage](https://github.com/user-attachments/assets/8aba2b50-6b65-4898-8c2c-ec8547e35320)
 
-[Back to Top](#data-analyst-nidhinmk)
+[Back to Top](#data-analyst)
 
 # Project 3: Data Analytic Platform Implementation for The City of Vancouver
 
@@ -292,4 +292,4 @@ calculated for both the departments.
 
   ![11_LogsnAlarm](https://github.com/user-attachments/assets/e0e5cf91-416f-4acc-a104-c0c2f598a35f)
 
-  [Back to Top](#data-analyst-nidhinmk)
+  [Back to Top](#data-analyst)
