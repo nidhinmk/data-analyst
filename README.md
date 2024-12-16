@@ -1,6 +1,12 @@
 # data-analyst
 Below is the overview of the AWS projects completed
 
+[Project 1](#project-1-descriptive-analysis-of-employee-remuneration-for-city-of-vancouver)
+
+[Project 2](#project-2-exploratory-data-analysis-for-the-city-of-vancouver)
+
+[Project 3](#project-3-data-analytic-platform-implementation-for-the-city-of-vancouver)
+
 # Project 1: Descriptive Analysis of Employee remuneration for City of Vancouver 
   
 - Project Description
